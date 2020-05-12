@@ -1,15 +1,12 @@
-let input = prompt("Enter a word or sentence");
+let input = prompt("Enter a word or sentence").toLowerCase();
 
 function reverseString(input) {
-    let lowerString = input.toLowerCase();
-    let stringArray = lowerString.split(""); 
+    let stringArray = input.split("");
     let reverseArray = stringArray.reverse();
     let joinString = reverseArray.join("");
 
     return joinString;
 }
-
-reverseString(input);
 
 // let input = prompt("Enter a word or sentence");
 // console.log(input);
